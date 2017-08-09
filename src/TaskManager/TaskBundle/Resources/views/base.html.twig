@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html"; charset=utf-8" />
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
+</head>
+<body>
+
+    {% block body %}{% endblock %}
+
+    <div id="footer">
+        {% block footer %}
+
+        {% endblock %}
+    </div>
+
+{% block stylesheets %}
+    <link href="{{ asset('css/bootstrap.min.css') }}" type="text/css" rel="stylesheet" />
+    <link href="{{ asset('css/bootstrap-theme.min.css') }}" type="text/css" rel="stylesheet" />
+    <link href="{{ asset('css/font-awesome.min.css') }}" type="text/css" rel="stylesheet" />
+    <link href="{{ asset('css/styles.css') }}" type="text/css" rel="stylesheet" />
+
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.css') }}"></script>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,107 @@
+{% extends 'TaskManagerTaskBundle::base.html.twig' %}
+
+{% block title %}
+    Тестовое задание для Ruby Garage
+{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+
+        <section>
+            <div class="list-header">
+
+            </div>
+            <div class="add-task-block">
+                <button class="add-row-button"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                <form action="">
+                    <input type="text" placeholder="Start typing here to create a tesk...">
+                    <input type="submit">
+                </form>
+            </div>
+            <ul>
+                <li>
+                    <div class="task-row row-1">
+                        <input type="checkbox">
+                    </div>
+                    <div class="task-row row-2">
+                        <div>Task-1</div>
+                    </div>
+                    <div class="task-row  row-3">
+                        <button class="move-task"><i class="fa fa-sort" aria-hidden="true"></i></button>
+                        <button class="edit-task"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                        <button class="delete-task"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                    </div>
+
+                </li>
+
+                <li>
+                    <div class="task-row row-1">
+                        <input type="checkbox">
+                    </div>
+                    <div class="task-row row-2">
+                        <div>Task-2</div>
+                    </div>
+                    <div class="task-row row-3">
+                        <button class="move-task"><i class="fa fa-sort" aria-hidden="true"></i></button>
+                        <button class="edit-task"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                        <button class="delete-task"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                    </div>
+
+                </li>
+
+                <li>
+                    <div class="task-row row-1">
+                        <input type="checkbox">
+                    </div>
+                    <div class="task-row row-2">
+                        <div>Task-3</div>
+                    </div>
+                    <div class="task-row row-3">
+                        <button class="move-task"><i class="fa fa-sort" aria-hidden="true"></i></button>
+                        <button class="edit-task"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                        <button class="delete-task"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                    </div>
+
+                </li>
+
+                <li>
+                    <div class="task-row row-1">
+                        <input type="checkbox">
+                    </div>
+                    <div class="task-row row-2">
+                        <div>Task-4</div>
+                    </div>
+                    <div class="task-row row-3">
+                        <button class="move-task"><i class="fa fa-sort" aria-hidden="true"></i></button>
+                        <button class="edit-task"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                        <button class="delete-task"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                    </div>
+
+                </li>
+
+
+                <li>
+                    <div class="task-row row-1">
+                        <input type="checkbox">
+                    </div>
+                    <div class="task-row row-2">
+                        <div>Task-5</div>
+                    </div>
+                    <div class="task-row row-3">
+                        <button class="move-task"><i class="fa fa-sort" aria-hidden="true"></i></button>
+                        <button class="edit-task"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                        <button class="delete-task"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                    </div>
+
+                </li>
+            </ul>
+        </section>
+
+
+
+
+        
+    </div>
+
+{% endblock %}
