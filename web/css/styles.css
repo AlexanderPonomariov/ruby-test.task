@@ -1,5 +1,41 @@
-.row-1,
-.row-2,
-.row-3 {
-    display: inline-block;
+/*.task-row {*/
+    /*display: inline-block;*/
+    /*position: relative;*/
+/*}*/
+
+.task-row.row-1:after {
+    border-right: 2px solid grey;
+    right: 0;
+}
+.task-row.row-3:after {
+    left: 0;
+}
+.task-row.row-1:after,
+.task-row.row-3:after {
+    content: '';
+    width: 10px;
+    height: 100%;
+    border-left: 2px solid grey;
+    position: absolute;
+    top: 0;
+}
+
+/*.row-1 {*/
+    /*width: 10%;*/
+/*}*/
+/*.row-2 {*/
+    /*width: 59%;*/
+/*}*/
+/*.row-3 {*/
+    /*width: 30%;*/
+    /*padding-left: 15px;*/
+/*}*/
+section li {
+    border: 2px solid grey;
+    list-style: none;
+    margin-top: -2px;
+}
+
+section .task-row {
+    height: 30px;
 }

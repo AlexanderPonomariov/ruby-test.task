@@ -8,26 +8,33 @@
 
     <div class="container">
 
-        <section>
+        <section class="col-lg-6 col-md-6 col-xs-6">
             <div class="list-header">
 
+                <div class="task-row">
+                    <p><i class="fa fa-calendar-o" aria-hidden="true"></i>Task title text</p>
+                </div>
+                <div class="task-row">
+                    <button class="edit-list"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                    <button class="delete-list"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                </div>
             </div>
             <div class="add-task-block">
-                <button class="add-row-button"><i class="fa fa-plus" aria-hidden="true"></i></button>
-                <form action="">
+                <button class="add-row-button task-row"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                <form action="" class="task-row">
                     <input type="text" placeholder="Start typing here to create a tesk...">
-                    <input type="submit">
+                    <input type="submit" value="Add task">
                 </form>
             </div>
-            <ul>
-                <li>
-                    <div class="task-row row-1">
+            <ul class="container">
+                <li class="row">
+                    <div class="task-row row-1 col-lg-1 col-md-1 col-xs-1">
                         <input type="checkbox">
                     </div>
-                    <div class="task-row row-2">
-                        <div>Task-1</div>
+                    <div class="task-row col-lg-9 col-md-9 col-xs-9">
+                        <div class="task-content">Task-1</div>
                     </div>
-                    <div class="task-row  row-3">
+                    <div class="task-row row-3 col-lg-2 col-md-2 col-xs-2">
                         <button class="move-task"><i class="fa fa-sort" aria-hidden="true"></i></button>
                         <button class="edit-task"><i class="fa fa-pencil" aria-hidden="true"></i></button>
                         <button class="delete-task"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
@@ -35,14 +42,14 @@
 
                 </li>
 
-                <li>
-                    <div class="task-row row-1">
+                <li class="row">
+                    <div class="task-row row-1 col-lg-1 col-md-1 col-xs-1">
                         <input type="checkbox">
                     </div>
-                    <div class="task-row row-2">
-                        <div>Task-2</div>
+                    <div class="task-row col-lg-9 col-md-9 col-xs-9">
+                        <div class="task-content">Task-2</div>
                     </div>
-                    <div class="task-row row-3">
+                    <div class="task-row row-3 col-lg-2 col-md-2 col-xs-2">
                         <button class="move-task"><i class="fa fa-sort" aria-hidden="true"></i></button>
                         <button class="edit-task"><i class="fa fa-pencil" aria-hidden="true"></i></button>
                         <button class="delete-task"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
@@ -50,14 +57,14 @@
 
                 </li>
 
-                <li>
-                    <div class="task-row row-1">
+                <li class="row">
+                    <div class="task-row row-1 col-lg-1 col-md-1 col-xs-1">
                         <input type="checkbox">
                     </div>
-                    <div class="task-row row-2">
-                        <div>Task-3</div>
+                    <div class="task-row col-lg-9 col-md-9 col-xs-9">
+                        <div class="task-content">Task-3</div>
                     </div>
-                    <div class="task-row row-3">
+                    <div class="task-row row-3 col-lg-2 col-md-2 col-xs-2">
                         <button class="move-task"><i class="fa fa-sort" aria-hidden="true"></i></button>
                         <button class="edit-task"><i class="fa fa-pencil" aria-hidden="true"></i></button>
                         <button class="delete-task"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
@@ -65,14 +72,14 @@
 
                 </li>
 
-                <li>
-                    <div class="task-row row-1">
+                <li class="row">
+                    <div class="task-row row-1 col-lg-1 col-md-1 col-xs-1">
                         <input type="checkbox">
                     </div>
-                    <div class="task-row row-2">
-                        <div>Task-4</div>
+                    <div class="task-row col-lg-9 col-md-9 col-xs-9">
+                        <div class="task-content">Task-4</div>
                     </div>
-                    <div class="task-row row-3">
+                    <div class="task-row row-3 col-lg-2 col-md-2 col-xs-2">
                         <button class="move-task"><i class="fa fa-sort" aria-hidden="true"></i></button>
                         <button class="edit-task"><i class="fa fa-pencil" aria-hidden="true"></i></button>
                         <button class="delete-task"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
@@ -81,14 +88,14 @@
                 </li>
 
 
-                <li>
-                    <div class="task-row row-1">
+                <li class="row">
+                    <div class="task-row row-1 col-lg-1 col-md-1 col-xs-1">
                         <input type="checkbox">
                     </div>
-                    <div class="task-row row-2">
-                        <div>Task-5</div>
+                    <div class="task-row col-lg-9 col-md-9 col-xs-9">
+                        <div class="task-content">Task-5</div>
                     </div>
-                    <div class="task-row row-3">
+                    <div class="task-row row-3 col-lg-2 col-md-2 col-xs-2">
                         <button class="move-task"><i class="fa fa-sort" aria-hidden="true"></i></button>
                         <button class="edit-task"><i class="fa fa-pencil" aria-hidden="true"></i></button>
                         <button class="delete-task"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
@@ -101,7 +108,7 @@
 
 
 
-        
+
     </div>
 
 {% endblock %}
